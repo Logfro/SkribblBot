@@ -3,7 +3,7 @@ const cluster = require("cluster");
 const sqlite3 = require("sqlite3");
 
 if (cluster.isMaster) {
-    let db = new sqlite3.Database('words.db', (err) => {
+    let db = new sqlite3.Database('words_en.db', (err) => {
         if (err) {
             console.error(err.message);
         }
