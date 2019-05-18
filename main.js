@@ -62,7 +62,7 @@ if (cluster.isMaster) {
 } else if (cluster.isWorker) {
     const USERNAME_SELECTOR = "#inputName";
     const LANGUAGE_SELECTOR = "#loginLanguage";
-    const LANGUAGE = "German";
+    const LANGUAGE = "English";
     const START_ROOM = "buttonLoginCreatePrivate";
     const ROUND_CNT = "#lobbySetRounds";
     const INVITE_LINK = "invite";
