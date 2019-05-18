@@ -52,7 +52,6 @@ if (cluster.isMaster) {
     cluster.fork();
     cluster.fork();
     cluster.fork();
-    cluster.fork();
 
     cluster.on("message", messageHandler);
 
