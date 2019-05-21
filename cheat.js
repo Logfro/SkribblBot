@@ -1,11 +1,5 @@
-let file = JSON.parse(require("fs").readFileSync("words.json"));
-
-let params = {laenge: 6, maske: "______"};
-
-file.forEach(function (word) {
-    if (word.word.length === params.laenge)
-        console.log(word);
-});
+let file = JSON.parse(require("fs").readFileSync("words_english.json"));
+let params = {laenge: 11, maske: "__________r"};
 console.log("---------------------------------");
 file.forEach(function (word) {
     if (word.word.length === params.laenge)
@@ -21,3 +15,4 @@ function checkMask(word) {
                 ret = false;
     return ret;
 }
+console.log(JSON.stringify(file));
